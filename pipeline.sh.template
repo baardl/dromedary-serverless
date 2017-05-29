@@ -1,0 +1,1 @@
+gulp pipeline:$1 --token=xx --stackName=bolivianworker --templateBucket=bli-built --region=us-west-2
