@@ -4,3 +4,6 @@ dist.zip
 .idea/
 *.iml
 .DS_Store
+
+pipeline.sh
+pipeline-up.sh

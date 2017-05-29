@@ -557,6 +557,7 @@ function runGulp(packageDirectory, task, env) {
 // run shell script
 //
 function exec(command,options) {
+  console.log("Exec command: " + command + ", options: " + JSON.stringify(options));
     return new Promise(function (resolve, reject) {
         var child = childProcess.exec(command,options);
 
@@ -578,4 +579,3 @@ function exec(command,options) {
         });
     });
 }
-

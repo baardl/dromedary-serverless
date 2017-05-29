@@ -15,16 +15,16 @@ var opts = {
     region: (gutil.env.region || 'us-west-2'),
     stackName: (gutil.env.stackName || 'dromedary-serverless'),
     cfnBucket: (gutil.env.templateBucket || 'serverless-pipeline'),
-    testSiteFQDN: 'drom-test.elasticoperations.com',
-    prodSiteFQDN: 'drom-prod.elasticoperations.com',
-    hostedZoneId: 'Z3809G91N7QZJE', //TODO: get this programatically
+    testSiteFQDN: 'drom-test.bolivianworker.com',
+    prodSiteFQDN: 'drom-prod.bolivianworker.com',
+    hostedZoneId: 'Z2YGKNLNCQFJ79', //TODO: get this programatically
     distSitePath: 'dist/site.zip',
     distLambdaPath: 'dist/lambda.zip',
     distSwaggerPath: 'dist/swagger.json',
     gulpTestTask: 'test-functional',
     gulpPackageTask: 'package',
     githubToken: gutil.env.token,
-    githubUser: 'stelligent',
+    githubUser: 'baardl',
     githubRepo: 'dromedary',
     githubBranch: 'master'
 }
@@ -150,5 +150,3 @@ function uploadLambda(lambdaArnOutputKey) {
             });
         });
 }
-
-
